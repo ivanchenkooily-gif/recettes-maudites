@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a0f24;
+    color: #e8dff0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Creepster', serif;
+    color: #8cff2e;
+}
+
+a {
+    color: #8cff2e;
+}
+
+a:hover {
+    color: #c084fc;
+}
+
+.section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Menu */
+header {
+    background-color: #0d0614;
+    border-bottom: 4px solid #8cff2e;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .nav-link {
+    color: #e8dff0;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #8cff2e;
+}
+
+/* Boutons */
+.bouton {
+    display: inline-block;
+    background-color: #8cff2e;
+    color: #1a0f24;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.bouton:hover {
+    background-color: #c084fc;
+    color: #1a0f24;
+}
+
+/* Bannière */
+.banniere {
+    background-image: url('../images/soupe-potiron-1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.banniere .container {
+    background-color: rgba(26, 15, 36, 0.85);
+    border: 2px solid #8cff2e;
+    padding: 40px 20px;
+    border-radius: 12px;
+    max-width: 700px;
+}
+
+/* Carousel */
+.carousel {
+    border: 3px solid #5b2d82;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-caption p {
+    display: inline-block;
+    background-color: rgba(26, 15, 36, 0.85);
+    color: #8cff2e;
+    padding: 6px 16px;
+    border-radius: 8px;
+}
+
+/* Cartes, blocs et membres */
+.carte-recette, .bloc, .membre {
+    background-color: #2a1838;
+    border: 2px solid #5b2d82;
+    border-radius: 12px;
+}
+
+.carte-recette {
+    overflow: hidden;
+    height: 100%;
+}
+
+.carte-recette:hover {
+    border-color: #8cff2e;
+}
+
+.carte-recette img {
+    width: 100%;
+}
+
+.carte-contenu, .bloc {
+    padding: 20px;
+}
+
+.bloc {
+    margin-bottom: 24px;
+}
+
+.membre {
+    padding: 24px;
+    text-align: center;
+    height: 100%;
+}
+
+.membre img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #8cff2e;
+}
+
+.infos {
+    padding: 0;
+}
+
+.infos li {
+    display: inline-block;
+    background-color: #3d1f57;
+    color: #c084fc;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-right: 8px;
+}
+
+.etoiles {
+    color: #8cff2e;
+}
+
+.galerie {
+    margin-bottom: 30px;
+}
+
+.commentaire {
+    border-left: 6px solid #8cff2e;
+}
+
+.note {
+    text-align: center;
+}
+
+/* Pied de page */
+footer {
+    background-color: #0d0614;
+    color: #a78bbd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 4px solid #8cff2e;
+}
+
+/* Téléphone */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    .banniere {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
