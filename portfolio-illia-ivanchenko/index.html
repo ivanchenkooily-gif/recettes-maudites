@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Illia Ivanchenko – Étudiant ESGI en recherche d’alternance réseaux</title>
+<meta name="description" content="Portfolio d’Illia Ivanchenko, étudiant en bachelor informatique à l’ESGI, en recherche d’une alternance en réseaux et sécurité.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F6F7F9; --surface:#FFFFFF; --ink:#16213A; --muted:#55607A; --line:#D9DEE8;
+  --blue:#2457E6; --blue-ink:#FFFFFF; --tint:#E4ECFF; 
+  --display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1424; --surface:#161E33; --ink:#E9EDF6; --muted:#9AA5BF; --line:#2A3453;
+    --blue:#7DA2FF; --blue-ink:#0E1424; --tint:#1D2B55;  color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1424; --surface:#161E33; --ink:#E9EDF6; --muted:#9AA5BF; --line:#2A3453;
+  --blue:#7DA2FF; --blue-ink:#0E1424; --tint:#1D2B55;  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:4px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;gap:1rem;flex-wrap:wrap}
+header.top strong{font:700 1.125rem var(--display)}
+nav a{margin-left:1.25rem;color:var(--muted);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;padding:3rem 0 4.5rem}
+h1{font:700 clamp(2.75rem,7vw,5.25rem)/.98 var(--display);letter-spacing:-.03em;margin:0 0 1.25rem}
+.role{font:500 1.375rem/1.35 var(--display);margin:0 0 1rem}
+.lead{color:var(--muted);max-width:34rem;margin:0 0 1.75rem}
+.btns{display:flex;gap:.75rem;flex-wrap:wrap}
+.btn{display:inline-block;padding:.8rem 1.35rem;border-radius:.5rem;font-weight:500;text-decoration:none;border:1.5px solid var(--blue)}
+.btn.main{background:var(--blue);color:var(--blue-ink)}
+.btn.alt{color:var(--blue)}
+.ticket{background:var(--surface);border:1.5px solid var(--line);border-radius:.75rem;overflow:hidden}
+.ticket header{background:var(--tint);padding:.85rem 1.25rem;display:flex;justify-content:space-between;align-items:center;font-weight:500}
+.status{display:inline-flex;align-items:center;gap:.45rem;color:var(--blue);font-weight:500}
+.status::before{content:"";width:.6rem;height:.6rem;border-radius:50%;background:var(--blue)}
+.ticket dl{margin:0;padding:.5rem 1.25rem 1rem}
+.ticket div.r{padding:.8rem 0;border-bottom:1px solid var(--line)}
+.ticket div.r:last-child{border:0}
+.ticket dt{font-size:.85rem;color:var(--muted)}
+.ticket dd{margin:.1rem 0 0;font-weight:500}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.75rem,3.5vw,2.5rem)/1.1 var(--display);letter-spacing:-.02em;margin:0 0 1.75rem}
+h3{font:700 1.2rem/1.3 var(--display);margin:0 0 .25rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.tl{list-style:none;margin:0;padding:0 0 0 1.5rem;border-left:2px solid var(--blue)}
+.tl li{position:relative;padding-bottom:2rem}
+.tl li::before{content:"";position:absolute;left:-1.95rem;top:.45rem;width:.7rem;height:.7rem;border-radius:50%;background:var(--bg);border:2px solid var(--blue)}
+.tl time{display:block;color:var(--muted);font-size:.9rem;margin-bottom:.2rem}
+.tl ul{margin:.5rem 0 0;padding-left:1.1rem;color:var(--muted)}
+.tags{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.tags li{background:var(--surface);border:1.5px solid var(--line);border-radius:2rem;padding:.4rem 1rem}
+.group+.group{margin-top:1.75rem}
+.group p{margin:0 0 .75rem;color:var(--muted)}
+.contact{background:var(--surface);border:1.5px solid var(--line);border-radius:.75rem;padding:2rem;display:flex;gap:1.5rem;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.contact p{margin:.25rem 0 0;color:var(--muted)}
+.proj{display:grid;grid-template-columns:1.35fr 1fr;gap:2rem;align-items:center;padding:1.75rem 0}
+.proj+.proj{border-top:1px solid var(--line)}
+.proj img{width:100%;height:auto;display:block;border:1.5px solid var(--line);border-radius:.6rem}
+.proj p{color:var(--muted);margin:.5rem 0 0}
+.proj .tags{margin-top:1rem}
+@media (max-width:52rem){.proj{grid-template-columns:1fr}}
+footer{padding:2rem 0;color:var(--muted);font-size:.9rem}
+@media (max-width:52rem){.hero,.two{grid-template-columns:1fr;gap:2rem}nav{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>Illia Ivanchenko</strong>
+    <nav aria-label="Navigation principale">
+      <a href="#profil">Profil</a><a href="#projets">Projets</a><a href="#parcours">Parcours</a><a href="#competences">Compétences</a><a href="#interets">Centres d’intérêt</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Illia Ivanchenko</h1>
+        <p class="role">Étudiant en informatique à l’ESGI, en recherche d’une alternance en réseaux et sécurité.</p>
+        <p class="lead">Je me forme au support informatique, aux systèmes et aux réseaux. Je cherche une entreprise où apprendre sur le terrain, résoudre de vrais incidents et prendre mes responsabilités.</p>
+        <div class="btns">
+          <a class="btn main" href="mailto:ivanchenkooily@gmail.com?subject=Alternance%20r%C3%A9seaux">Me contacter par e-mail</a>
+          <a class="btn alt" href="#parcours">Voir mon parcours</a>
+        </div>
+      </div>
+      <aside class="ticket" aria-label="Résumé de ma recherche">
+        <header><span>Recherche d’alternance</span><span class="status">Disponible</span></header>
+        <dl>
+          <div class="r"><dt>Poste visé</dt><dd>Alternance en réseaux et sécurité</dd></div>
+          <div class="r"><dt>Objectif professionnel</dt><dd>Support informatique ou ingénieur réseaux et sécurité</dd></div>
+          <div class="r"><dt>Formation</dt><dd>Bachelor informatique, ESGI Paris 12</dd></div>
+          <div class="r"><dt>Langues</dt><dd>Français C2, anglais B2, ukrainien, russe</dd></div>
+        </dl>
+      </aside>
+    </div>
+
+    <section id="profil">
+      <h2>Profil</h2>
+      <div class="two">
+        <p>Je suis étudiant en informatique à l’ESGI. Motivé et sérieux, je m’intéresse au développement et aux technologies numériques. Mon projet professionnel : devenir technicien support informatique, puis ingénieur réseaux et sécurité.</p>
+        <p>Au-delà des cours, je veux renforcer mes compétences en réseaux grâce à une alternance. J’y apporterai de la rigueur, le goût du travail en équipe et l’habitude d’être autonome sur les tâches qu’on me confie.</p>
+      </div>
+    </section>
+
+    <section id="projets">
+<h2>Projets</h2>
+<article class="proj"><img src="images/figma-ray-ban.jpg" width="1600" height="1016" alt="Concept Ray-Ban : maquettes Figma" loading="lazy"><div><h3>Concept Ray-Ban : maquettes Figma</h3><p>Concept de site e-commerce pour Ray-Ban, conçu sur Figma : page d’accueil, configurateur de lunettes, fiches produits, promotions et panier. Je me suis appuyé sur une grille de 12 colonnes, la typographie Josefin Sans et une palette limitée.</p><div class="btns" style="margin-top:1rem"><a class="btn main" href="https://www.figma.com/design/S800uQrfu3JD09H3mzSI7u/Portfolio-Illia-Ivanchenko?node-id=0-1&amp;t=Gyw9KY21Ojs7WZcU-1" target="_blank" rel="noopener">Voir le projet sur Figma</a></div><ul class="tags"><li>Figma</li><li>Design graphique</li><li>Maquettage</li><li>Grille et typographie</li></ul></div></article>
+<article class="proj"><img src="images/packet-tracer-reseau.jpg" width="1400" height="886" alt="Architecture réseau sous Cisco Packet Tracer" loading="lazy"><div><h3>Architecture réseau sous Cisco Packet Tracer</h3><p>Réseau d’entreprise simulé : plan d’adressage 192.168.100.0/24 découpé en sous-réseaux /26 pour les postes et les serveurs, routeur Cisco 2911, switches 2960, passerelles et route par défaut vers l’extérieur.</p><ul class="tags"><li>Cisco Packet Tracer</li><li>Adressage IP</li><li>Sous-réseaux</li><li>Routage</li></ul></div></article>
+<article class="proj"><img src="images/recettes-maudites.jpg" width="1400" height="787" alt="Recettes maudites : site en HTML/CSS" loading="lazy"><div><h3>Recettes maudites : site en HTML/CSS</h3><p>Site de recettes d’Halloween en HTML et CSS : navigation à trois pages, cartes de recettes avec catégorie, durée, difficulté et note, et une identité visuelle sombre, violette et verte.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>Intégration web</li></ul></div></article>
+</section>
+
+    <section id="parcours">
+      <h2>Parcours</h2>
+      <ol class="tl">
+        <li>
+          <time>Depuis septembre 2026</time>
+          <h3>ESGI, École supérieure de génie informatique</h3>
+          Cycle bachelor, Paris 12.
+        </li>
+        <li>
+          <time>Février – avril 2026, Thiers</time>
+          <h3>Ouvrier paysagiste, Villamodul</h3>
+          <ul><li>Travail en équipe sur chantier</li><li>Organisation quotidienne et travail physique</li><li>Adaptation à différents environnements</li></ul>
+        </li>
+        <li>
+          <time>Août 2024 – août 2025, Viry-Châtillon</time>
+          <h3>Agent d’entretien des espaces naturels, Syndicat de l’Orge</h3>
+          <ul><li>Respect des consignes et travail en équipe</li><li>Gestion autonome des tâches confiées</li><li>Rigueur et sens des responsabilités</li></ul>
+        </li>
+        <li>
+          <time>Lycée du Parc des Loges, Évry</time>
+          <h3>Baccalauréat général</h3>
+          Spécialités informatique et anglais : SQL, Python, bases de données, Linux, HTML/CSS.
+        </li>
+        <li>
+          <time>AEC English</time>
+          <h3>Formation spéciale d’anglais, niveau B2</h3>
+        </li>
+      </ol>
+    </section>
+
+    <section id="competences">
+      <h2>Compétences</h2>
+      <div class="two">
+        <div>
+          <div class="group"><h3>Support et outils</h3><p>Ce que j’utilise pour dépanner et assister des utilisateurs.</p>
+            <ul class="tags"><li>Windows 11</li><li>Microsoft 365</li><li>GLPI</li><li>AnyDesk</li><li>Cybermalveillance.gouv.fr (phishing)</li></ul></div>
+          <div class="group"><h3>Bases techniques</h3><p>Acquises au lycée et à l’ESGI.</p>
+            <ul class="tags"><li>Linux</li><li>Python</li><li>SQL</li><li>Bases de données</li><li>HTML/CSS</li></ul></div>
+        </div>
+        <div>
+          <div class="group"><h3>Savoir-être</h3><p>Construits sur le terrain, en équipe et en autonomie.</p>
+            <ul class="tags"><li>Rigueur</li><li>Autonomie</li><li>Travail en équipe</li><li>Adaptabilité</li><li>Sens des responsabilités</li></ul></div>
+          <div class="group"><h3>Langues</h3><p>Ukrainien et russe (langues maternelles).</p>
+            <ul class="tags"><li>Français : C2</li><li>Anglais : B2</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="interets">
+      <h2>Centres d’intérêt</h2>
+      <div class="two">
+        <p>Le développement informatique et le web, le support informatique, les systèmes et réseaux, la cybersécurité. J’aime comprendre comment les choses fonctionnent, des jeux vidéo jusqu’au matériel.</p>
+        <p>Je suis passionné par le hardware PC, le dépannage et l’optimisation des performances. Je suis aussi curieux du cloud, de la virtualisation et de l’intelligence artificielle.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <div>
+          <h2 style="margin:0">Parlons de votre alternance</h2>
+          <p>Paris, France. Je réponds volontiers par e-mail ou par téléphone.</p>
+        </div>
+        <div class="btns">
+          <a class="btn main" href="mailto:ivanchenkooily@gmail.com">ivanchenkooily@gmail.com</a>
+          <a class="btn alt" href="tel:+33749399933">07 49 39 99 33</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Illia Ivanchenko</footer>
+</div>
+</body>
+</html>
